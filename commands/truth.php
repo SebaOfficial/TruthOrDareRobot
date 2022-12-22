@@ -1,6 +1,6 @@
 <?php
 
-$truth = strtr(getTexts("TRUTH_PRV_TXT", $lang), [
+$truth = strtr(getTexts("TRUTH_TXT", $lang), [
     "{truth}" => truth_or_dare("truths", $mode, $lang)
 ]);
 
@@ -20,7 +20,7 @@ if(isset($data)){
         composeKeyboard("truth", $lang)
     );
     answerCall($callbackId,
-        getTexts("DARE_CALLBACK", $lang)
+        getTexts("TRUTH_CALLBACK", $lang)
     );
     
 }

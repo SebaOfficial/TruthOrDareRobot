@@ -1,6 +1,6 @@
 <?php
 
-$dare = strtr(getTexts("DARE_PRV_TXT", $lang), [
+$dare = strtr(getTexts("DARE_TXT", $lang), [
     "{dare}" => truth_or_dare("dares", $mode, $lang)
 ]);
 
