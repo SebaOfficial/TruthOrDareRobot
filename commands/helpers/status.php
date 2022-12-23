@@ -1,10 +1,10 @@
 <?php
 
 $new = strtr($my_chat_member_status, [
-    "kicked" => "blocked", // The user blocked the bot
-    "member" => "active" // The user unblocked the bot
+    "kicked" => "false", // The user blocked the bot
+    "member" => "true" // The user unblocked the bot
 ]);
 
-updateStatus($id, $new);
+updateUser($id, "active", $new);
 
 ?>

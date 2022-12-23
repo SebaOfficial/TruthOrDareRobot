@@ -42,7 +42,7 @@ if($update){ // If there's a Telegram update
                     $command = substr($text, 0, strpos($text, " ")); // Removes the parameters of the command
                 }
 
-                if(str_contains($command, "@")){ // If the command is sent in a group with the @ specification
+                if(str_contains($command, "@")){ // If the command is sent in a group with the username specification
                     $command = substr($command, 0, strpos($command, "@"));
                 }
 
@@ -56,7 +56,7 @@ if($update){ // If there's a Telegram update
                 
                 // Requires the command if it exitsts
                 if(file_exists("commands/$command.php")){
-                    updateUser($id, "action", $text); // Sets the action
+                    updateUser($id, "action", $command); // Sets the action
                     require_once "commands/$command.php"; // Requires the file
                 }
 
