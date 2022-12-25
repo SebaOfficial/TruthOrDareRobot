@@ -42,7 +42,7 @@ Otherwise feel free to [contact me](https://racca.me#contact).
     * Texts<br>
     *Contains all the texts the bot will use:*<br>
         1. The text id (**id**)
-        2. The culomns for the languages (**lang-code**)
+        2. The columns for the languages (**lang-code**)
         3. The type of a button, *optional* (**type**)
         4. The callback or url of a button, *optional* (**callback**)<br>
 
