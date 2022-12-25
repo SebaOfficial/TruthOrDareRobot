@@ -35,8 +35,8 @@ Otherwise feel free to [contact me](https://racca.me#contact).
     * Users<br>
     *Contains information about all the users:*<br>
         1. Telegram id (**id**);
-        2. last action in the bot (**action**);
-        3. if they blocked the bot (**active**)
+        2. Last action in the bot (**action**);
+        3. If they blocked the bot (**active**)
         4. The mode they are playing (**mode**)
         5. Their preferred language (**lang**)
     * Texts<br>
