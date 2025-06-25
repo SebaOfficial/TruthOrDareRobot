@@ -1,10 +1,10 @@
 {
 	"name": "truthordarerobot",
-	"version": "1.0.0",
+	"version": "1.1.0",
 	"description": "A Telegram bot to play truth or dare with friends",
 	"main": "build/index.js",
 	"scripts": {
-		"dev": "nodemon",
+		"dev": "NODE_ENV='development' nodemon",
 		"build": "pnpm build:i18n && pnpm build:prisma && tsc && cp -r src/generated/prisma build/generated/prisma",
 		"build:i18n": "ts-i18n -i src/i18n/locales -o src/generated/i18n && rm src/generated/i18n/browser.ts",
 		"build:prisma": "prisma generate --no-hints",

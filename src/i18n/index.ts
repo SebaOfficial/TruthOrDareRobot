@@ -8,3 +8,8 @@ export type Locale = typeof en;
 
 export const AVAILABLE_LANGUAGES: Language[] = Object.keys(locales) as Language[];
 export const FALLBACK_LANGUAGE: Language = 'en';
+
+export const LANGUAGES_EMOJIS: Record<Language, string> = {
+	en: '🇬🇧',
+	it: '🇮🇹',
+};

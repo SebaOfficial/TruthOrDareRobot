@@ -9,7 +9,8 @@ import ModeHandler from './handlers/mode';
 import StartHandler from './handlers/start';
 import HelpHandler from './handlers/help';
 import { TruthHandler, DareHandler } from './handlers/truth_or_dare';
-import { FALLBACK_MODE } from './types/mode';
+import { AVAILABLE_MODES, FALLBACK_MODE } from './types/mode';
+import LangHandler from './handlers/lang';
 
 const bot = new Telegraf<Context>(env.BOT_TOKEN, { telegram: { webhookReply: true, apiMode: 'bot' } });
 
@@ -37,9 +38,10 @@ bot.help(HelpHandler.command);
 bot.action('help', HelpHandler.action);
 
 bot.command('mode', ModeHandler.command);
+AVAILABLE_MODES.forEach(mode => bot.action(`mode:${mode}`, ModeHandler.action));
 
-bot.action('mode:classic', ModeHandler.action);
-bot.action('mode:hot', ModeHandler.action);
+bot.command('lang', LangHandler.command);
+AVAILABLE_LANGUAGES.forEach((lang) => bot.action(`lang:${lang}`, LangHandler.action));
 
 bot.command('truth', TruthHandler.command);
 bot.action('truth', TruthHandler.action);

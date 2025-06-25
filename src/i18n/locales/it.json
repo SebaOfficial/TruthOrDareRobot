@@ -1,4 +1,10 @@
 {
+		"error": {
+		"NOT_ADMIN": {
+			"message": "<b>🛑 Devi essere un admin per eseguire quest'azione!</b>",
+			"callback": "🛑 Devi essere un admin per eseguire quest'azione!"
+		}
+	},
 	"start": {
 		"message": "<b>👋 Ciao {{name}}!</b>\nGioca ad Obbligo o Verità con i tuoi amici con più modalità.",
 		"keyboard": {
@@ -17,7 +23,7 @@
 	},
 	"mode": {
 		"selector": {
-			"message": "<b>📯 Scegli la modalità di Obbligo o Verità</b>\n Usa i bottoni qua sotto.",
+			"message": "<b>📯 Scegli la modalità di Obbligo o Verità</b>\nUsa i bottoni qua sotto.",
 			"keyboard": {
 				"classic": "{{mode_icon_classic}} Classica",
 				"hot": "{{mode_icon_hot}} Hot"
@@ -26,10 +32,19 @@
 		"selected": {
 			"message": "<b>{{mode_icon}} Modalità scelta, divertiti!</b>",
 			"callback": "{{mode_icon}} Ok"
+		}
+	},
+		"lang": {
+		"selector": {
+			"message": "<b>🏳️‍🌈 Seleziona la tua lingua</b>\nUsa i bottoni qua sotto.",
+			"keyboard": {
+				"en": "{{lang_icon}} English",
+				"it": "{{lang_icon}} Italiano"
+			}
 		},
-		"error": {
-			"message": "<b>🛑 Non puoi cambiare modalità se non sei un admin!</b>",
-			"callback": "Non puoi cambiare modalità se non sei un admin!"
+		"selected": {
+			"message": "<b>{{lang_icon}} Lingua impostata, divertiti!</b>",
+			"callback": "{{lang_icon}} Ok"
 		}
 	},
 	"truth": {

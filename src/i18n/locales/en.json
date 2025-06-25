@@ -1,4 +1,10 @@
 {
+	"error": {
+		"NOT_ADMIN": {
+			"message": "<b>🛑 You must be an admin to do this!</b>",
+			"callback": "🛑 You must be an admin to do this!"
+		}
+	},
 	"start": {
 		"message": "<b>👋 Hi {{name}}!</b>\nPlay Truth or Dare with your friends with various modes.",
 		"keyboard": {
@@ -26,10 +32,19 @@
 		"selected": {
 			"message": "<b>{{mode_icon}} Mode set, have fun!</b>",
 			"callback": "{{mode_icon}} Ok"
+		}
+	},
+	"lang": {
+		"selector": {
+			"message": "<b>🏳️‍🌈 Select your language</b>\nUse the buttons below.",
+			"keyboard": {
+				"en": "{{lang_icon}} English",
+				"it": "{{lang_icon}} Italiano"
+			}
 		},
-		"error": {
-			"message": "<b>🛑 You can't change modes unless you're an admin!</b>",
-			"callback": "You can't change modes unless you're an admin!"
+		"selected": {
+			"message": "<b>{{lang_icon}} Language set, have fun!</b>",
+			"callback": "{{lang_icon}} Ok"
 		}
 	},
 	"truth": {
