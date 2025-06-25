@@ -1,0 +1,49 @@
+{
+	"start": {
+		"message": "<b>👋 Ciao {{name}}!</b>\nGioca ad Obbligo o Verità con i tuoi amici con più modalità.",
+		"keyboard": {
+			"developer": "🧑‍💻 Sviluppatore",
+			"help": "🆘 Aiuto",
+			"add_to_group": "➕ Aggiungimi ad un gruppo ➕"
+		},
+		"callback": "🏘 Menù principale"
+	},
+	"help": {
+		"message": "<b>🆘 Aiuto</b>",
+		"keyboard": {
+			"back": "🔙 Indietro"
+		},
+		"callback": "🆘 Help"
+	},
+	"mode": {
+		"selector": {
+			"message": "<b>📯 Scegli la modalità di Obbligo o Verità</b>\n Usa i bottoni qua sotto.",
+			"keyboard": {
+				"classic": "{{mode_icon_classic}} Classica",
+				"hot": "{{mode_icon_hot}} Hot"
+			}
+		},
+		"selected": {
+			"message": "<b>{{mode_icon}} Modalità scelta, divertiti!</b>",
+			"callback": "{{mode_icon}} Ok"
+		},
+		"error": {
+			"message": "<b>🛑 Non puoi cambiare modalità se non sei un admin!</b>",
+			"callback": "Non puoi cambiare modalità se non sei un admin!"
+		}
+	},
+	"truth": {
+		"message": "<b>✅ VERITÀ ✅</b>\n{{prompt}}",
+		"keyboard": {
+			"another": "🔁 Un'altra 🔁"
+		},
+		"callback": "✅ VERITÀ ✅"
+	},
+	"dare": {
+		"message": "<b>❗️ OBBLIGO ❗️</b>\n{{prompt}}",
+		"keyboard": {
+			"another": "🔁 Un altro 🔁"
+		},
+		"callback": "❗️ OBBLIGO ❗️"
+	}
+}

@@ -1,0 +1,6 @@
+{
+  "watch": ["src"],
+	"ignore": ["src/generated"],
+  "ext": "ts,json",
+  "exec": "pnpm build:i18n && ts-node ./src/index.ts"
+}

@@ -1,0 +1,15 @@
+# Compiled output
+/node_modules
+/build
+/src/generated
+
+# Logs
+*.log
+pnpm-debug.log*
+
+# Environment variables
+.env*
+!.env.example*
+
+# Database
+*.db

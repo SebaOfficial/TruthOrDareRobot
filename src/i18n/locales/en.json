@@ -1,0 +1,49 @@
+{
+	"start": {
+		"message": "<b>👋 Hi {{name}}!</b>\nPlay Truth or Dare with your friends with various modes.",
+		"keyboard": {
+			"developer": "🧑‍💻 Developer",
+			"help": "🆘 Help",
+			"add_to_group": "➕ Add me to a group ➕"
+		},
+		"callback": "🏘 Home"
+	},
+	"help": {
+		"message": "<b>🆘 Help</b>",
+		"keyboard": {
+			"back": "🔙 Back"
+		},
+		"callback": "🆘 Help"
+	},
+	"mode": {
+		"selector": {
+			"message": "<b>📯 Choose the mode of Truth or Dare</b>\nUse the buttons below.",
+			"keyboard": {
+				"classic": "{{mode_icon_classic}} Classic",
+				"hot": "{{mode_icon_hot}} Hot"
+			}
+		},
+		"selected": {
+			"message": "<b>{{mode_icon}} Mode set, have fun!</b>",
+			"callback": "{{mode_icon}} Ok"
+		},
+		"error": {
+			"message": "<b>🛑 You can't change modes unless you're an admin!</b>",
+			"callback": "You can't change modes unless you're an admin!"
+		}
+	},
+	"truth": {
+		"message": "<b>✅ TRUTH ✅</b>\n{{prompt}}",
+		"keyboard": {
+			"another": "🔁 Another One 🔁"
+		},
+		"callback": "✅ TRUTH ✅"
+	},
+	"dare": {
+		"message": "<b>❗️ DARE ❗️</b>\n{{prompt}}",
+		"keyboard": {
+			"another": "🔁 Another One 🔁"
+		},
+		"callback": "❗️ DARE ❗️"
+	}
+}

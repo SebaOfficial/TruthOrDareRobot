@@ -1,0 +1,14 @@
+build
+node_modules
+prisma/*.db
+.dockerignore
+.editorconfig
+.env*
+.git*
+.prettierignore
+.prettierrc
+Dockerfile
+eslint.config.mjs
+nodemon.json
+*.md
+.github
