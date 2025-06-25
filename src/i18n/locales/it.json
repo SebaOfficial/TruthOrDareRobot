@@ -15,7 +15,7 @@
 		"callback": "🏘 Menù principale"
 	},
 	"help": {
-		"message": "<b>🆘 Aiuto</b>",
+		"message": "<b><u>🆘 Aiuto</u></b>\n<i>Leggi prima di contattare lo sviluppatore.</i>\n\n<b>🤖 Ecco la lista dei comandi disponibili:</b>\n/truth - Invia una verità in chat.\n/dare - Invia un obbligo in chat.\n/mode [classic|hot] - Scegli la modalità di gioco\n/lang [en|it] - Cambia la lingua\n\nSe hai ancora bisogno di aiuto puoi contattatare <a href='tg://user?id=385966887'>Seba</a>, lo sviluppatore del bot.",
 		"keyboard": {
 			"back": "🔙 Indietro"
 		},

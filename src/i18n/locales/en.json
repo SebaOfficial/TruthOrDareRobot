@@ -15,7 +15,7 @@
 		"callback": "🏘 Home"
 	},
 	"help": {
-		"message": "<b>🆘 Help</b>",
+		"message": "<b><u>🆘 Help</u></b>\n<i>Read this before contacting the developer.</i>\n\n<b>🤖 Here's the list of available commands:</b>\n/truth - Send a truth in the current chat.\n/dare - Send a dare in the current chat.\n/mode [classic|hot] - Choose the mode of the game\n/lang [en|it] - Change the language\n\nIf you still need help you can contact <a href='tg://user?id=385966887'>Seba</a>, the developer of the bot.",
 		"keyboard": {
 			"back": "🔙 Back"
 		},
