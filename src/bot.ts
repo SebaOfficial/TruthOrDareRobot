@@ -11,6 +11,7 @@ import HelpHandler from './handlers/help';
 import { TruthHandler, DareHandler } from './handlers/truth_or_dare';
 import { AVAILABLE_MODES, FALLBACK_MODE } from './types/mode';
 import LangHandler from './handlers/lang';
+import PrivacyHandler from './handlers/privacy';
 
 const bot = new Telegraf<Context>(env.BOT_TOKEN, { telegram: { webhookReply: true, apiMode: 'bot' } });
 
@@ -42,6 +43,9 @@ AVAILABLE_MODES.forEach(mode => bot.action(`mode:${mode}`, ModeHandler.action));
 
 bot.command('lang', LangHandler.command);
 AVAILABLE_LANGUAGES.forEach((lang) => bot.action(`lang:${lang}`, LangHandler.action));
+
+bot.command('privacy', PrivacyHandler.command);
+bot.action('privacy', PrivacyHandler.action);
 
 bot.command('truth', TruthHandler.command);
 bot.action('truth', TruthHandler.action);

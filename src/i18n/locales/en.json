@@ -5,6 +5,17 @@
 			"callback": "🛑 You must be an admin to do this!"
 		}
 	},
+	"common": {
+		"back": "🔙 Back"
+	},
+	"commands": {
+		"start": "Start the bot",
+		"truth": "Send a Truth",
+		"dare": "Send a Dare",
+		"mode": "Select the mode",
+		"help": "Get help",
+		"privacy": "Privacy policy"
+	},
 	"start": {
 		"message": "<b>👋 Hi {{name}}!</b>\nPlay Truth or Dare with your friends with various modes.",
 		"keyboard": {
@@ -17,7 +28,7 @@
 	"help": {
 		"message": "<b><u>🆘 Help</u></b>\n<i>Read this before contacting the developer.</i>\n\n<b>🤖 Here's the list of available commands:</b>\n/truth - Send a truth in the current chat.\n/dare - Send a dare in the current chat.\n/mode [classic|hot] - Choose the mode of the game\n/lang [en|it] - Change the language\n\nIf you still need help you can contact <a href='tg://user?id=385966887'>Seba</a>, the developer of the bot.",
 		"keyboard": {
-			"back": "🔙 Back"
+			"privacy": "🔐 Privacy"
 		},
 		"callback": "🆘 Help"
 	},
@@ -46,6 +57,10 @@
 			"message": "<b>{{lang_icon}} Language set, have fun!</b>",
 			"callback": "{{lang_icon}} Ok"
 		}
+	},
+	"privacy": {
+		"message": "<u><b>🔐 Privacy Policy</b></u>\n\n<b>What we store:</b>\n• User ID and group ID: <i>both provided by Telegram</i>\n• Preferred language: <i>provided by Telegram or selected by the user</i>\n• Selected mode: <i>selected by the user</i>\n• Last change of settings\n\n<b>What we use it for:</b>\n• To personalize the services offered by the bot\n• To maintain the security and functionality of the bot",
+		"callback": "🔐 Privacy"
 	},
 	"truth": {
 		"message": "<b>✅ TRUTH ✅</b>\n{{prompt}}",

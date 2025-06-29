@@ -1,7 +1,8 @@
 import { ActionContext, CommandContext, Context } from '../types/context';
 import { Keyboard, Key } from 'telegram-keyboard';
+import BaseHandler from './base';
 
-export default class StartHandler {
+export default class StartHandler extends BaseHandler {
 	private static getReply(ctx: Context, name: string) {
 		const locale = ctx.locale.start;
 		const message = locale.message({ name: name });

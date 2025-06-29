@@ -1,9 +1,20 @@
 {
-		"error": {
+	"error": {
 		"NOT_ADMIN": {
 			"message": "<b>🛑 Devi essere un admin per eseguire quest'azione!</b>",
 			"callback": "🛑 Devi essere un admin per eseguire quest'azione!"
 		}
+	},
+	"common": {
+		"back": "🔙 Indietro"
+	},
+	"commands": {
+		"start": "Avvia il bot",
+		"truth": "Invia una verità",
+		"dare": "Invia un obbligo",
+		"mode": "Seleziona una modalità",
+		"help": "Ottieni aiuto",
+		"privacy": "Privacy policy"
 	},
 	"start": {
 		"message": "<b>👋 Ciao {{name}}!</b>\nGioca ad Obbligo o Verità con i tuoi amici con più modalità.",
@@ -17,7 +28,7 @@
 	"help": {
 		"message": "<b><u>🆘 Aiuto</u></b>\n<i>Leggi prima di contattare lo sviluppatore.</i>\n\n<b>🤖 Ecco la lista dei comandi disponibili:</b>\n/truth - Invia una verità in chat.\n/dare - Invia un obbligo in chat.\n/mode [classic|hot] - Scegli la modalità di gioco\n/lang [en|it] - Cambia la lingua\n\nSe hai ancora bisogno di aiuto puoi contattatare <a href='tg://user?id=385966887'>Seba</a>, lo sviluppatore del bot.",
 		"keyboard": {
-			"back": "🔙 Indietro"
+			"privacy": "🔐 Privacy"
 		},
 		"callback": "🆘 Help"
 	},
@@ -34,7 +45,7 @@
 			"callback": "{{mode_icon}} Ok"
 		}
 	},
-		"lang": {
+	"lang": {
 		"selector": {
 			"message": "<b>🏳️‍🌈 Seleziona la tua lingua</b>\nUsa i bottoni qua sotto.",
 			"keyboard": {
@@ -46,6 +57,10 @@
 			"message": "<b>{{lang_icon}} Lingua impostata, divertiti!</b>",
 			"callback": "{{lang_icon}} Ok"
 		}
+	},
+	"privacy": {
+		"message": "<u><b>🔐 Privacy Policy</b></u>\n\n<b>Cosa salviamo:</b>\n• ID utente e ID del gruppo: <i>entrambi forniti da Telegram</i>\n• Lingua: <i>fornita da Telegram o selezionata dall'utente</i>\n• Modalità selezionata: <i>selezionata dall'utente</i>\n• Ultimo cambiamento delle impostazioni\n\n<b>Per cosa li usiamo:</b>\n• Per personalizzare i servizi offerti dal bot\n• Per mantenere la sicurezza e la funzionalità del bot",
+		"callback": "🔐 Privacy"
 	},
 	"truth": {
 		"message": "<b>✅ VERITÀ ✅</b>\n{{prompt}}",

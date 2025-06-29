@@ -9,7 +9,7 @@ import { i18nMiddleware } from '../middlewares/i18n';
 export default class LangHandler extends BaseHandler {
 	private static changeLang(ctx: CommandContext | ActionContext, lang: Language) {
 		ctx.session.lang = lang;
-		i18nMiddleware(ctx, async () => {});
+		i18nMiddleware(ctx, async () => { });
 	}
 
 	static async command(ctx: CommandContext) {
@@ -27,6 +27,12 @@ export default class LangHandler extends BaseHandler {
 		await LangHandler.selector(ctx);
 	}
 
+	private static async setCommands(ctx: CommandContext | ActionContext) {
+		await ctx.telegram.setMyCommands(Object.entries(ctx.locale.commands).map(([command, description]) => {
+			return { command, description: description() }
+		}), { scope: { type: 'chat', chat_id: ctx.chat?.id ?? ctx.from.id }})
+	}
+
 	private static async selector(ctx: CommandContext) {
 		const locale = ctx.locale.lang.selector;
 		const keyboard = Keyboard.make(
@@ -42,6 +48,8 @@ export default class LangHandler extends BaseHandler {
 		const locale = ctx.locale.lang.selected;
 		LangHandler.changeLang(ctx, lang);
 		await ctx.replyWithHTML(locale.message({ lang_icon: LANGUAGES_EMOJIS[lang] }));
+		await LangHandler.setCommands(ctx);
+
 		await StartHandler.command(ctx);
 	}
 
@@ -58,6 +66,7 @@ export default class LangHandler extends BaseHandler {
 
 		await ctx.editMessageText(locale.message({ lang_icon: LANGUAGES_EMOJIS[lang] }), { parse_mode: 'HTML' });
 		await ctx.answerCbQuery(locale.callback({ lang_icon: LANGUAGES_EMOJIS[lang] }));
+		await LangHandler.setCommands(ctx);
 
 		await StartHandler.command(ctx as unknown as CommandContext);
 	}
