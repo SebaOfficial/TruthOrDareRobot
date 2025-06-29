@@ -1,6 +1,6 @@
 {
 	"name": "truthordarerobot",
-	"version": "1.2.1",
+	"version": "1.2.2",
 	"description": "A Telegram bot to play truth or dare with friends",
 	"main": "build/index.js",
 	"scripts": {
