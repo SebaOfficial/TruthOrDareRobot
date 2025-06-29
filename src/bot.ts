@@ -39,7 +39,7 @@ bot.help(HelpHandler.command);
 bot.action('help', HelpHandler.action);
 
 bot.command('mode', ModeHandler.command);
-AVAILABLE_MODES.forEach(mode => bot.action(`mode:${mode}`, ModeHandler.action));
+AVAILABLE_MODES.forEach((mode) => bot.action(`mode:${mode}`, ModeHandler.action));
 
 bot.command('lang', LangHandler.command);
 AVAILABLE_LANGUAGES.forEach((lang) => bot.action(`lang:${lang}`, LangHandler.action));

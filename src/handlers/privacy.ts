@@ -6,9 +6,9 @@ export default class PrivacyHandler extends BaseHandler {
 	private static getReply(ctx: Context, back_button: boolean = false) {
 		const locale = ctx.locale.privacy;
 		const message = locale.message();
-		const keyboard = Keyboard.make(([
-			back_button ? Key.callback(ctx.locale.common.back(), 'help') : undefined,
-		].filter(Boolean) as CallbackButton[])).inline();
+		const keyboard = Keyboard.make(
+			[back_button ? Key.callback(ctx.locale.common.back(), 'help') : undefined].filter(Boolean) as CallbackButton[],
+		).inline();
 
 		return { locale, message, keyboard };
 	}

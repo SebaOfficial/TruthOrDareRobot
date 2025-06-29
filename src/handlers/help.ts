@@ -6,10 +6,12 @@ export default class HelpHandler extends BaseHandler {
 	private static getReply(ctx: Context, back_button: boolean = false) {
 		const locale = ctx.locale.help;
 		const message = locale.message();
-		const keyboard = Keyboard.make(([
-			back_button ? Key.callback(ctx.locale.common.back(), 'start') : undefined,
-			Key.callback(locale.keyboard.privacy(), 'privacy'),
-		].filter(Boolean) as CallbackButton[])).inline();
+		const keyboard = Keyboard.make(
+			[
+				back_button ? Key.callback(ctx.locale.common.back(), 'start') : undefined,
+				Key.callback(locale.keyboard.privacy(), 'privacy'),
+			].filter(Boolean) as CallbackButton[],
+		).inline();
 
 		return { locale, message, keyboard };
 	}
